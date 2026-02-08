@@ -3,8 +3,7 @@ import { Inter, Playfair_Display } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 
-const GA_MEASUREMENT_ID = "G-WL101P06PB";
-const GOOGLE_ADS_ID = "AW-16757775206";
+const GOOGLE_TAG_ID = "GT-WV8QQXX9";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -45,7 +44,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <head>
         <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_TAG_ID}`}
           strategy="beforeInteractive"
         />
         <Script id="google-analytics" strategy="beforeInteractive">
@@ -53,8 +52,7 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             window.gtag = function(){window.dataLayer.push(arguments);};
             window.gtag('js', new Date());
-            window.gtag('config', '${GA_MEASUREMENT_ID}');
-            window.gtag('config', '${GOOGLE_ADS_ID}');
+            window.gtag('config', '${GOOGLE_TAG_ID}');
           `}
         </Script>
       </head>
