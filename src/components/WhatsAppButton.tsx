@@ -1,7 +1,15 @@
+"use client";
+
+import { trackWhatsAppClick } from "./GoogleAnalytics";
+
 const WHATSAPP_URL =
   "https://api.whatsapp.com/send?phone=5511940301423&text=Ol%C3%A1,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20tratamentos";
 
 export default function WhatsAppButton() {
+  const handleClick = () => {
+    trackWhatsAppClick();
+  };
+
   return (
     <a
       href={WHATSAPP_URL}
@@ -9,6 +17,7 @@ export default function WhatsAppButton() {
       rel="noopener noreferrer"
       aria-label="Conversar no WhatsApp"
       className="fixed bottom-6 right-6 z-50 group"
+      onClick={handleClick}
     >
       {/* Pulse ring */}
       <span className="absolute inset-0 rounded-full bg-green-500/30 animate-pulse-ring" />
