@@ -4,6 +4,7 @@ import Script from "next/script";
 import "./globals.css";
 
 const GA_MEASUREMENT_ID = "G-WL101P06PB";
+const GOOGLE_ADS_ID = "AW-16757775206";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -53,6 +54,7 @@ export default function RootLayout({
             window.gtag = function(){window.dataLayer.push(arguments);};
             window.gtag('js', new Date());
             window.gtag('config', '${GA_MEASUREMENT_ID}');
+            window.gtag('config', '${GOOGLE_ADS_ID}');
           `}
         </Script>
       </head>
