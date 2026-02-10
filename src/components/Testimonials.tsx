@@ -25,7 +25,7 @@ function Stars({ count }: { count: number }) {
   return (
     <div className="flex gap-1">
       {Array.from({ length: count }).map((_, i) => (
-        <span key={i} className="text-gold text-sm">
+        <span key={i} className="text-accent text-sm">
           ★
         </span>
       ))}
@@ -35,13 +35,13 @@ function Stars({ count }: { count: number }) {
 
 export default function Testimonials() {
   return (
-    <section id="depoimentos" className="py-24 md:py-32">
+    <section id="depoimentos" className="py-20 md:py-28 bg-white">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <p className="text-gold text-sm uppercase tracking-[0.3em] mb-4">
+        <div className="text-center mb-14">
+          <p className="text-accent text-sm uppercase tracking-[0.3em] font-semibold mb-4">
             Depoimentos
           </p>
-          <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6">
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground uppercase mb-6">
             O que nossas clientes dizem
           </h2>
           <p className="text-foreground-muted text-lg max-w-2xl mx-auto">
@@ -53,19 +53,19 @@ export default function Testimonials() {
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.name}
-              className="bg-background-white/60 backdrop-blur-sm border border-beige-dark/50 rounded-2xl p-8"
+              className="bg-background-alt rounded-2xl p-8 border border-gray-100 shadow-sm"
             >
               <Stars count={testimonial.rating} />
               <p className="text-foreground-muted leading-relaxed mt-4 mb-6 italic">
                 &ldquo;{testimonial.text}&rdquo;
               </p>
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-gold-lighter flex items-center justify-center">
-                  <span className="text-gold font-display text-sm">
+                <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
+                  <span className="text-accent font-display text-sm font-bold">
                     {testimonial.name.charAt(0)}
                   </span>
                 </div>
-                <p className="text-foreground font-medium text-sm">
+                <p className="text-foreground font-semibold text-sm">
                   {testimonial.name}
                 </p>
               </div>

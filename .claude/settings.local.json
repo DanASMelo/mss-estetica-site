@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.mssestetica.com.br)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "WebFetch(domain:espacolaser.com.br)",
+      "Bash(powershell.exe -Command \"\\(Get-Command ffmpeg -ErrorAction SilentlyContinue\\).Source\")",
+      "Bash(powershell.exe:*)",
+      "Bash(FFMPEG=\"/c/Users/Danrley Tohm/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/ffmpeg.exe\")",
+      "Bash(\"$FFMPEG\" -y -i \"c:/Users/Danrley Tohm/Documents/Obsidian Vault/03_Work/mssestetica/Videos/Massagem Relaxante/WhatsApp Video 2026-02-10 at 12.49.17 PM.mp4\" -an -c:v copy \"c:/Users/Danrley Tohm/Documents/Obsidian Vault/03_Work/mssestetica/public/videos/massagem-relaxante/massagem-01.mp4\")",
+      "Bash(\"$FFMPEG\" -y -i \"c:/Users/Danrley Tohm/Documents/Obsidian Vault/03_Work/mssestetica/Videos/Massagem Relaxante/WhatsApp Video 2026-02-10 at 12.49.18 PM.mp4\" -an -c:v copy \"c:/Users/Danrley Tohm/Documents/Obsidian Vault/03_Work/mssestetica/public/videos/massagem-relaxante/massagem-02.mp4\")",
+      "Bash(\"$FFMPEG\" -y -i \"c:/Users/Danrley Tohm/Documents/Obsidian Vault/03_Work/mssestetica/Videos/Massagem Relaxante/WhatsApp Video 2026-02-10 at 12.49.18 PM \\(1\\).mp4\" -an -c:v copy \"c:/Users/Danrley Tohm/Documents/Obsidian Vault/03_Work/mssestetica/public/videos/massagem-relaxante/massagem-03.mp4\")",
+      "Bash(\"$FFMPEG\" -y -i \"c:/Users/Danrley Tohm/Documents/Obsidian Vault/03_Work/mssestetica/Videos/Massagem Relaxante/WhatsApp Video 2026-02-10 at 12.49.22 PM.mp4\" -an -c:v copy \"c:/Users/Danrley Tohm/Documents/Obsidian Vault/03_Work/mssestetica/public/videos/massagem-relaxante/massagem-04.mp4\")",
+      "Bash(\"$FFMPEG\" -y -i \"c:/Users/Danrley Tohm/Documents/Obsidian Vault/03_Work/mssestetica/Videos/Massagem Relaxante/WhatsApp Video 2026-02-10 at 12.49.23 PM.mp4\" -an -c:v copy \"c:/Users/Danrley Tohm/Documents/Obsidian Vault/03_Work/mssestetica/public/videos/massagem-relaxante/massagem-05.mp4\")"
+    ]
+  }
+}

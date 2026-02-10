@@ -3,13 +3,13 @@ const WHATSAPP_URL =
 
 export default function Contact() {
   return (
-    <section id="contato" className="py-24 md:py-32 bg-background-white">
+    <section id="contato" className="py-20 md:py-28 bg-background-alt">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <p className="text-gold text-sm uppercase tracking-[0.3em] mb-4">
+        <div className="text-center mb-14">
+          <p className="text-accent text-sm uppercase tracking-[0.3em] font-semibold mb-4">
             Contato
           </p>
-          <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6">
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground uppercase mb-6">
             Entre em Contato
           </h2>
           <p className="text-foreground-muted text-lg max-w-2xl mx-auto">
@@ -20,10 +20,10 @@ export default function Contact() {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Address card */}
-          <div className="bg-beige/50 border border-beige-dark/50 rounded-2xl p-8 text-center">
-            <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-gold-lighter flex items-center justify-center">
+          <div className="bg-white border border-gray-100 rounded-2xl p-8 text-center shadow-sm">
+            <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-accent/10 flex items-center justify-center">
               <svg
-                className="w-5 h-5 text-gold"
+                className="w-5 h-5 text-accent"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -42,7 +42,7 @@ export default function Contact() {
                 />
               </svg>
             </div>
-            <h3 className="font-display text-lg text-foreground mb-2">
+            <h3 className="font-display text-lg font-bold text-foreground uppercase mb-2">
               Endereço
             </h3>
             <p className="text-foreground-muted text-sm leading-relaxed">
@@ -56,17 +56,17 @@ export default function Contact() {
               href="https://www.google.com/maps/search/?api=1&query=R.+Silva+Bueno+1504+Ipiranga+São+Paulo"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block text-gold text-sm mt-3 hover:text-gold-light transition-colors"
+              className="inline-block text-accent text-sm font-semibold mt-3 hover:text-accent-light transition-colors"
             >
               Ver no mapa →
             </a>
           </div>
 
           {/* Phone card */}
-          <div className="bg-beige/50 border border-beige-dark/50 rounded-2xl p-8 text-center">
-            <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-gold-lighter flex items-center justify-center">
+          <div className="bg-white border border-gray-100 rounded-2xl p-8 text-center shadow-sm">
+            <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-accent/10 flex items-center justify-center">
               <svg
-                className="w-5 h-5 text-gold"
+                className="w-5 h-5 text-accent"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -79,7 +79,7 @@ export default function Contact() {
                 />
               </svg>
             </div>
-            <h3 className="font-display text-lg text-foreground mb-2">
+            <h3 className="font-display text-lg font-bold text-foreground uppercase mb-2">
               Telefone
             </h3>
             <p className="text-foreground-muted text-sm">
@@ -89,17 +89,17 @@ export default function Contact() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block text-gold text-sm mt-3 hover:text-gold-light transition-colors"
+              className="inline-block text-accent text-sm font-semibold mt-3 hover:text-accent-light transition-colors"
             >
               Chamar no WhatsApp →
             </a>
           </div>
 
           {/* Hours card */}
-          <div className="bg-beige/50 border border-beige-dark/50 rounded-2xl p-8 text-center">
-            <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-gold-lighter flex items-center justify-center">
+          <div className="bg-white border border-gray-100 rounded-2xl p-8 text-center shadow-sm">
+            <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-accent/10 flex items-center justify-center">
               <svg
-                className="w-5 h-5 text-gold"
+                className="w-5 h-5 text-accent"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -112,7 +112,7 @@ export default function Contact() {
                 />
               </svg>
             </div>
-            <h3 className="font-display text-lg text-foreground mb-2">
+            <h3 className="font-display text-lg font-bold text-foreground uppercase mb-2">
               Horário
             </h3>
             <p className="text-foreground-muted text-sm leading-relaxed">
@@ -126,7 +126,7 @@ export default function Contact() {
         </div>
 
         {/* Google Maps embed */}
-        <div className="mt-12 rounded-2xl overflow-hidden border border-beige-dark/50 h-80">
+        <div className="mt-12 rounded-2xl overflow-hidden border border-gray-100 h-80 shadow-sm">
           <iframe
             src="https://maps.google.com/maps?q=R.+Silva+Bueno,+1504+-+Ipiranga,+S%C3%A3o+Paulo+-+SP,+04208-000&t=&z=16&ie=UTF8&iwloc=&output=embed"
             width="100%"

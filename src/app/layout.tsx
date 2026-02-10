@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, Barlow_Condensed } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 
@@ -10,9 +10,10 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+const barlow = Barlow_Condensed({
+  variable: "--font-barlow",
   subsets: ["latin"],
+  weight: ["600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -41,13 +42,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
-      <head>
+    <html lang="pt-BR" suppressHydrationWarning>
+      <body className={`${inter.variable} ${barlow.variable} antialiased`} suppressHydrationWarning>
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_TAG_ID}`}
-          strategy="beforeInteractive"
+          strategy="afterInteractive"
         />
-        <Script id="google-analytics" strategy="beforeInteractive">
+        <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             window.gtag = function(){window.dataLayer.push(arguments);};
@@ -55,8 +56,6 @@ export default function RootLayout({
             window.gtag('config', '${GOOGLE_TAG_ID}');
           `}
         </Script>
-      </head>
-      <body className={`${inter.variable} ${playfair.variable} antialiased`}>
         {children}
       </body>
     </html>

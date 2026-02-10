@@ -1,12 +1,12 @@
 export default function Footer() {
   return (
-    <footer className="bg-foreground text-white/70">
+    <footer className="bg-primary text-white/70">
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <p className="font-display text-2xl text-white mb-4">
-              Mss <span className="text-gold">Estética</span>
+            <p className="font-display text-2xl font-bold text-white uppercase mb-4">
+              Mss <span className="text-accent">Estética</span>
             </p>
             <p className="text-sm leading-relaxed">
               Clínica de estética e bem-estar. Realce a sua beleza natural com
@@ -21,14 +21,14 @@ export default function Footer() {
 
           {/* Quick links */}
           <div>
-            <h4 className="font-display text-lg text-white mb-4">
+            <h4 className="font-display text-lg font-bold text-white uppercase mb-4">
               Navegação
             </h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <a
                   href="#inicio"
-                  className="hover:text-gold transition-colors duration-300"
+                  className="hover:text-accent transition-colors duration-300"
                 >
                   Início
                 </a>
@@ -36,7 +36,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#servicos"
-                  className="hover:text-gold transition-colors duration-300"
+                  className="hover:text-accent transition-colors duration-300"
                 >
                   Serviços
                 </a>
@@ -44,7 +44,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#sobre"
-                  className="hover:text-gold transition-colors duration-300"
+                  className="hover:text-accent transition-colors duration-300"
                 >
                   Sobre
                 </a>
@@ -52,7 +52,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#galeria"
-                  className="hover:text-gold transition-colors duration-300"
+                  className="hover:text-accent transition-colors duration-300"
                 >
                   Galeria
                 </a>
@@ -60,7 +60,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#depoimentos"
-                  className="hover:text-gold transition-colors duration-300"
+                  className="hover:text-accent transition-colors duration-300"
                 >
                   Depoimentos
                 </a>
@@ -68,7 +68,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#contato"
-                  className="hover:text-gold transition-colors duration-300"
+                  className="hover:text-accent transition-colors duration-300"
                 >
                   Contato
                 </a>
@@ -78,7 +78,7 @@ export default function Footer() {
 
           {/* Social & contact */}
           <div>
-            <h4 className="font-display text-lg text-white mb-4">
+            <h4 className="font-display text-lg font-bold text-white uppercase mb-4">
               Redes Sociais
             </h4>
             <div className="flex gap-4">
@@ -87,7 +87,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
-                className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:border-gold hover:text-gold transition-all duration-300"
+                className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:border-accent hover:text-accent transition-all duration-300"
               >
                 <svg
                   className="w-4 h-4"
@@ -104,8 +104,7 @@ export default function Footer() {
 
         <div className="border-t border-white/10 mt-12 pt-8 text-center text-sm">
           <p>
-            &copy; {new Date().getFullYear()} Mss Estética. Todos os direitos
-            reservados.
+            &copy; 2025 Mss Estética. Todos os direitos reservados.
           </p>
         </div>
       </div>

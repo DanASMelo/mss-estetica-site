@@ -31,13 +31,13 @@ const treatmentPhoto = {
 
 export default function Gallery() {
   return (
-    <section id="galeria" className="py-24 md:py-32">
+    <section id="galeria" className="py-20 md:py-28 bg-background-alt">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <p className="text-gold text-sm uppercase tracking-[0.3em] mb-4">
+        <div className="text-center mb-14">
+          <p className="text-accent text-sm uppercase tracking-[0.3em] font-semibold mb-4">
             Galeria
           </p>
-          <h2 className="font-display text-4xl md:text-5xl text-foreground mb-6">
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground uppercase mb-6">
             Conheça nosso Espaço
           </h2>
           <p className="text-foreground-muted text-lg max-w-2xl mx-auto">
@@ -48,7 +48,7 @@ export default function Gallery() {
 
         {/* Gallery grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {/* Large featured image - treatment in action */}
+          {/* Large featured image */}
           <div className="md:col-span-2 lg:col-span-1 lg:row-span-2 group relative rounded-2xl overflow-hidden">
             <div className="aspect-[3/4] lg:aspect-auto lg:h-full relative">
               <Image
@@ -58,9 +58,9 @@ export default function Gallery() {
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-t from-accent/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                <p className="text-white font-display text-lg">
+                <p className="text-white font-display text-lg font-bold uppercase">
                   {treatmentPhoto.label}
                 </p>
               </div>
@@ -81,9 +81,9 @@ export default function Gallery() {
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                  <p className="text-white font-display text-sm">
+                  <p className="text-white font-display text-sm font-bold uppercase">
                     {photo.label}
                   </p>
                 </div>
